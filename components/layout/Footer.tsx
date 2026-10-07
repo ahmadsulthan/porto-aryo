@@ -18,14 +18,6 @@ export default function Footer() {
               Research, Education, and Community Development.
             </p>
           </div>
-
-          <div className="flex gap-6 text-slate-400">
-            <a href="mailto:aryo@example.com">Email</a>
-
-            <a href="https://wa.me/6281234567890">WhatsApp</a>
-
-            <a href="#">LinkedIn</a>
-          </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/10">
