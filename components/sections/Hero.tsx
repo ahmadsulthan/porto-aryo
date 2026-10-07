@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "../ui/Container";
 
@@ -187,7 +188,86 @@ export default function Hero() {
                 overflow-hidden
               "
             >
-              {/* Foto Aryo */}
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0.95,
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  delay: 0.4,
+                  duration: 0.8,
+                }}
+                className="
+    flex
+    justify-center
+    lg:justify-end
+    relative
+  "
+              >
+                {/* Glow Background */}
+                <div
+                  className="
+      absolute
+      w-[280px]
+      h-[280px]
+      md:w-[350px]
+      md:h-[350px]
+      rounded-full
+      bg-amber-400/20
+      blur-[80px]
+    "
+                />
+
+                <motion.div
+                  whileHover={{
+                    y: -8,
+                  }}
+                  transition={{
+                    duration: 0.3,
+                  }}
+                  className="
+      relative
+      w-full
+      max-w-[340px]
+      h-[420px]
+      md:max-w-[380px]
+      md:h-[470px]
+      rounded-[36px]
+      overflow-hidden
+      border
+      border-white/10
+      bg-gradient-to-b
+      from-slate-800
+      to-slate-900
+      shadow-2xl
+      backdrop-blur-sm
+    "
+                >
+                  <Image
+                    src="/images/aryo-profile.svg"
+                    alt="Aryo Anargya"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+
+                  {/* Overlay */}
+                  <div
+                    className="
+        absolute
+        inset-0
+        bg-gradient-to-t
+        from-black/40
+        via-transparent
+        to-transparent
+      "
+                  />
+                </motion.div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

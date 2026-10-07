@@ -19,6 +19,12 @@ export const skillGroups = [
   },
   {
     title: "Technical",
-    skills: ["Microsoft Word", "Microsoft Excel", "PowerPoint", "Canva"],
+    skills: [
+      "Microsoft Word",
+      "Microsoft Excel",
+      "PowerPoint",
+      "Canva",
+      "Editing Video",
+    ],
   },
 ];
